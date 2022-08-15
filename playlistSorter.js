@@ -180,7 +180,7 @@ window.onload = function(){
       //gets the URL for calling the api
       function getUrl(pagetoken) {
         var pt = (typeof pagetoken === "undefined") ? "" :`&pageToken=${pagetoken}`;
-        var mykey = config.mykey;
+        var mykey = 'AIzaSyBxVA2mRDqoSHzg0tbwURldoYRPA51tYhc';
         var playListID = playlistURL.split("?list=").pop();
 
         var URL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${playListID}&key=${mykey}${pt}`;
